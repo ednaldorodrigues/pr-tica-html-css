@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(255, 192, 203, 0.63);
+}
+
+.container .balanco {
+    background-color: rgb(187, 26, 26);
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.balanco {
+    display: flex;
+    justify-content: space-between;
+}
+
+.balance {
+    padding-left: 20px;
+}
+
+.circle {
+    position: relative;
+    padding-right: 20px;
+    font-size: 40px;
+}
+
+.circle .black {
+    color: black;
+}
+
+.circle .white {
+    position: absolute;
+    left: -20px;
+}
+
+.balance h1 {
+    font-size: 0.8rem;
+}
+
+.balance p {
+    font-size: 1.5rem;
+}
+
+.balanco-semanal {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+
+
+.balanco-semanal .semanas {
+    gap: 22px;
+}
+
+.balanco-semanal h1 {
+    margin-bottom: 20px;
+}
+
+.semanas {
+    margin-top: 60px;
+}
+
+.semanas .mon{
+    background-color: rgb(187, 26, 26);
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+}
+
+.semanas .tue{
+    background-color: rgb(187, 26, 26);
+    height: 60px;
+    width: 30px;
+    border-radius: 4px;
+}
+
+.semanas .wed{
+    background-color: #00ced1;
+    height: 90px;
+    width: 30px;
+    border-radius: 4px;
+}
+
+.semanas .thu{
+    background-color: rgb(187, 26, 26);
+    height: 45px;
+    width: 30px;
+    border-radius: 4px;
+}
+
+.semanas .fri{
+    background-color: rgb(187, 26, 26);
+    height: 35px;
+    width: 30px;
+    border-radius: 4px;
+}
+
+.semanas .sat{
+    background-color: rgb(187, 26, 26);
+    height: 75px;
+    width: 30px;
+    border-radius: 4px;
+}
+
+.semanas .sun{
+    background-color: rgb(187, 26, 26);
+    height: 40px;
+    width: 30px;
+    border-radius: 4px;
+}
+
+.semanas {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.total-mes p {
+    color: gray;
+    font-weight: bold;
+    margin-top: 60px;
+}
+
+.total-mes h1 {
+    font-size: 3rem;
+
+}
+
+.balanco-mensal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px auto 0 auto;
+}
+
+.balanco-mensal {
+    border-top: 1px solid black;
+}
+
+.aumento {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 50px;
+}
+
+.aumento p {
+    color: gray;
+    font-weight: bold;
+
+}
+
+.aumento span {
+    font-weight: bold;
+    
+}
+
+.mon::before {
+    content: '$12.55';
+    color: white;
+    font-size: 0.8rem;
+    padding: 4px;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 4px;
+    left: -8px;
+    top: 30px;
+    width: 40px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.897);
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+}
+
+.tue::before {
+    content: '$39.91';
+    color: white;
+    font-size: 0.8rem;
+    padding: 4px;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 4px;
+    left: 42px;
+    top: 0px;
+    width: 40px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.897);
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+}
+
+.wed::before {
+    content: '$52.36';
+    color: white;
+    font-size: 0.8rem;
+    padding: 4px;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 4px;
+    left: 94px;
+    top: -30px;
+    width: 40px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.897);
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+}
+
+.thu::before {
+    content: '$31.07';
+    color: white;
+    font-size: 0.8rem;
+    padding: 4px;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 4px;
+    right: 147px;
+    top: 15px;
+    width: 40px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.897);
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+}
+
+.fri::before {
+    content: '$21.43';
+    color: white;
+    font-size: 0.8rem;
+    padding: 4px;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 4px;
+    left: 198px;
+    top: 25px;
+    width: 40px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.897);
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+}
+
+.sat::before {
+    content: '$42.96';
+    color: white;
+    font-size: 0.8rem;
+    padding: 4px;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 4px;
+    left: 250px;
+    top: -15px;
+    width: 40px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.897);
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+}
+
+.sun::before {
+    content: '$26.28';
+    color: white;
+    font-size: 0.8rem;
+    padding: 4px;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 4px;
+    left: 303px;
+    top: 20px;
+    width: 40px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.897);
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+}
+
+.mon:hover {
+    cursor: pointer;
+}
+
+.segunda:hover {
+    cursor: pointer;
+}
+
+.mon:hover::before {
+    opacity: 1;
+    transition: 0.6s;
+    visibility: visible;
+}
+
+.tue:hover {
+    cursor: pointer;
+}
+
+.terca:hover {
+    cursor: pointer;
+}
+
+.tue:hover::before {
+    opacity: 1;
+    transition: 0.6s;
+    visibility: visible;
+}
+
+.wed:hover {
+    cursor: pointer;
+}
+
+.quarta:hover {
+    cursor: pointer;
+}
+
+.wed:hover::before {
+    opacity: 1;
+    transition: 0.6s;
+    visibility: visible;
+}
+
+.thu:hover {
+    cursor: pointer;
+}
+
+.quinta:hover {
+    cursor: pointer;
+}
+
+.thu:hover::before {
+    opacity: 1;
+    transition: 0.6s;
+    visibility: visible;
+}
+
+.fri:hover {
+    cursor: pointer;
+}
+
+.sexta:hover {
+    cursor: pointer;
+}
+
+.fri:hover::before {
+    opacity: 1;
+    transition: 0.6s;
+    visibility: visible;
+}
+
+.sat:hover {
+    cursor: pointer;
+}
+
+.sabado:hover {
+    cursor: pointer;
+}
+
+.sat:hover::before {
+    opacity: 1;
+    transition: 0.6s;
+    visibility: visible;
+}
+
+.sun:hover {
+    cursor: pointer;
+}
+
+.domingo:hover {
+    cursor: pointer;
+}
+
+.sun:hover::before {
+    opacity: 1;
+    transition: 0.6s;
+    visibility: visible;
+}
+
